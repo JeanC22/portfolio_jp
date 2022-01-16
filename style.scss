@@ -1,0 +1,16 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+// Create your own map
+$custom-colors: (
+  "purplejp": #ac12d7,
+  "greenjp": #12d719,
+  "gradientjp": linear-gradient(
+    180deg
+    ,rgba(0,0,0,.95) 0%,rgba(0,0,0,.7) 100%),
+        background-image: linear-gradient(rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 100%),
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
