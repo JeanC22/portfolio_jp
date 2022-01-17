@@ -12,30 +12,42 @@
    
 </head>
 <body>
+  <div id="progressbar"></div>
+<div id="scrollpath"></div>
 @include('components.nav')
         @include('components.alert')
       <div class="container-fluid">
-        <div class="row" ><div class="col-12" ></div></div>
-          <div class="row ">
-              <div class="col-6">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum vel maiores minima ratione, optio sapiente facere natus suscipit ullam delectus blanditiis quam voluptates nostrum deserunt itaque architecto totam ad maxime.
+        <div class="row ">
+              <div class="col-9">
+                    <div class="row">
+                      <div class="col backg-jp mt-5 ms-5 ">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corporis dolores sequi maiores alias rerum reiciendis molestiae omnis vitae, eligendi adipisci inventore explicabo voluptatibus ab magni facilis quasi at atque!
+                      </div>
+                      <div class="col mt-5 bg-">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum corporis dolores sequi maiores alias rerum reiciendis molestiae omnis vitae, eligendi adipisci inventore explicabo voluptatibus ab magni facilis quasi at atque!
+                    </div>
+                    </div>
               </div>
-            
-              <div class="col-6">
-                  <div class="row" style="background-color:rgb(225, 225, 225) ">
-                  </div>
+                <div class="col-3 ">
                   <div class="row">
-                   <img src="{{ URL::asset('../resources/img/jp.jpg') }}" width="100vh" height="400" alt="" srcset="">   
-                </div>
-                  <div class="row" style="background-color:rgb(225, 225, 225) ">
-                      
+                    <div class="col me-5 mt-5 mb-5">
+                    <img src="{{ URL::asset('../resources/img/asd.png') }}"  width="325"alt="" srcset="">   
                   </div>
+                </div>
+              </div>
               </div>
           </div>
       </div>
     @include('components.footer')
 </body>
-
+<script type="text/javascript">
+	let progress = document.getElementById('progressbar');
+	let totalHeight = document.body.scrollHeight - window.innerHeight;
+	window.onscroll = function () {
+		let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		progress.style.height = progressHeight + "%";
+	}
+</script>
 <script type='text/javascript' src="{{ URL::asset('../node_modules/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
 
