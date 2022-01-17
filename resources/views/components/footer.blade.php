@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="text-center text-lg-start text-muted " style="background-color: #0c0c0c">
+<footer class="text-center text-lg-start text-muted align-bottom" style="background-color: #0c0c0c">
     <!-- Section: Social media -->
     <section
       class="border-bottom border-3 border-purplejp d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -35,7 +35,7 @@
   
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-center text-md-start">
         <!-- Grid row -->
         <div class="row mt-3">
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">

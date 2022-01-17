@@ -74,14 +74,21 @@
 }
 
 body {
+/* 
+  background-image: url(../img/1366_521.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+  
+  background-color: #faebd7;
   margin: 0;
   font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color:rgba(18, 215, 25,.8);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -235,12 +242,12 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color:  #12d719;
   text-decoration: underline;
 }
 
 a:hover {
-  color: #0a58ca;
+  color:  #12d719;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -628,7 +635,12 @@ progress {
 .figure {
   display: inline-block;
 }
-
+.imgsizebg{
+  top: 0vh;
+  right: -20vh;
+  opacity: .5;
+  width: 20%;
+}
 .figure-img {
   margin-bottom: 0.5rem;
   line-height: 1;
@@ -3588,7 +3600,7 @@ fieldset:disabled .btn {
 
 .btn-greenjp:hover {
   color: #000;
-  background-color: #36dd3c;
+  background-color: #12d719;
   border-color: #2adb30;
 }
 
@@ -4505,7 +4517,8 @@ fieldset:disabled .btn {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: var(--bs-greenjp);
+  color: rgba(255,255,255);
+
   text-decoration: none;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
@@ -4519,7 +4532,7 @@ fieldset:disabled .btn {
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: #08660b;
+  color: #12d719;
 }
 
 .nav-link.disabled {
@@ -8108,7 +8121,8 @@ fieldset:disabled .btn {
 }
 
 .border-purplejp {
-  border-color: #ac12d7 !important;
+  border-color: rgba(172, 18, 215,.7) !important;
+  
 }
 
 .border-greenjp {
@@ -9044,7 +9058,7 @@ fieldset:disabled .btn {
 
 .text-muted {
   --bs-text-opacity: 1;
-  color: var(--bs-greenjp) !important;
+  color:  rgba(255,255,255) !important;
 }
 
 .text-black-50 {
@@ -9082,7 +9096,11 @@ fieldset:disabled .btn {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
-
+.backg-jp {
+  /* esta aqui bg color */
+  --bs-bg-opacity: 1;
+  background-color: rgba(0,0,255) !important;
+}
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
@@ -12188,3 +12206,123 @@ fieldset:disabled .btn {
   }
 }
 /*# sourceMappingURL=style.css.map */
+/* Scroll 1 */
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: consolas;
+
+}
+section
+{
+	padding: 50px;
+	background: #000;
+}
+section h2
+{
+	font-size: 2.5em;
+	color: #fff;
+}
+section h1
+{
+	font-size: 2em;
+	color: #fff;
+}
+::-webkit-scrollbar
+{
+	width: 0;
+}
+#scrollPath
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: rgba(255,255,255,0.05);
+}
+#progressbar
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 10px;
+
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	animation: animate 5s linear infinite;
+}
+@keyframes animate
+{
+	0%,100%
+	{
+		filter: hue-rotate(0deg);
+	}
+	50%
+	{
+		filter: hue-rotate(360deg);
+	}
+}
+#progressbar:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	filter: blur(10px);
+}
+#progressbar:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #008aff,#00ffe7);
+	filter: blur(30px);
+}
+li{
+  list-style: none;
+}
+.btn_jp {
+  border-radius: 4px;
+  background-color:  rgba(0, 0, 0, 0.8);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2vh;
+}
+
+.btn_jp span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.btn_jp span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+.btn_jp:hover span {
+  padding-right: 25px;
+}
+
+.btn_jp:hover span:after {
+  opacity: 1;
+  right: 0;
+}
