@@ -74,12 +74,12 @@
 }
 
 body {
-/* 
-  background-image: url(../img/1366_521.jpeg);
-  background-position: center center;
+
+  background-image: url(../img/bg_prueba.png);
+  background-position: 100% 0%  ;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; */
+  background-size: cover;
   
   background-color: #faebd7;
   margin: 0;
@@ -87,7 +87,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color:rgba(18, 215, 25,.8);
+  color:rgba(255, 255, 255, 0.8);
   text-align: var(--bs-body-text-align);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -472,7 +472,7 @@ legend + * {
   font: inherit;
 }
 
-::-webkit-file-upload-button {
+::-webkit-file-upx-button {
   font: inherit;
   -webkit-appearance: button;
 }
@@ -9099,7 +9099,7 @@ fieldset:disabled .btn {
 .backg-jp {
   /* esta aqui bg color */
   --bs-bg-opacity: 1;
-  background-color: rgba(0,0,255) !important;
+  background-color: rgba(0,0,0,.6) !important;
 }
 .bg-secondary {
   --bs-bg-opacity: 1;
@@ -12325,4 +12325,7 @@ li{
 .btn_jp:hover span:after {
   opacity: 1;
   right: 0;
+}
+#contenidoContainer{
+  content: ' '
 }

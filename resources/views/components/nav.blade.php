@@ -1,4 +1,4 @@
-<nav class="gradientjp b-3 border-bottom border-3 border-purplejp navbar navbar-expand-lg"  >
+<nav class="gradientjp b-3 border-bottom border-3 border-purplejp navbar navbar-expand-lg d-none"  >
     <img src="{{ URL::asset('../resources/img/logo_jp.png') }}" alt="" srcset="">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
